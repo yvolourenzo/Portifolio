@@ -64,18 +64,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Yvo Lourenzo de Castro</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.php">Início</a></li>
-            <li><a href="portfolio.php">Portfólio</a></li>
-            <li><a href="contato.php">Contato</a></li>
-        </ul>
-    </nav>
-
+    <?php include 'header.php'; ?>
     <div class="conteudo">
     <img src="Scripts_Php/img_eu.jpg" alt="Minha Imagem" style="display: block; margin: 0 auto; max-width: 40%; height: auto;">
     
@@ -191,12 +180,7 @@
     }
 </style>
 
-
-
-
-<footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
-    &copy; <?php echo date("d/m/Y"); ?> - Todos os direitos reservados.
-        </footer>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>

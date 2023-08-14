@@ -81,18 +81,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Contato</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.php">Início</a></li>
-            <li><a href="portfolio.php">Portfólio</a></li>
-            <li><a href="contato.php">Contato</a></li>
-        </ul>
-    </nav>
-
+<?php include 'header.php'; ?>
     <div class="conteudo">
         <h2>Contato</h2>
         <div class="contato-info">
@@ -114,11 +103,6 @@
             </form>
         </div>
     </div>
-
-        <footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
-    &copy; <?php echo date("d/m/Y"); ?> - Todos os direitos reservados.
-        </footer>
-
-
+    <?php include 'footer.php'; ?>
 </body>
 </html>

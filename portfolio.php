@@ -3,78 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="portifoliocss.css">
     <title>Meu Portfólio - Jogos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .conteudo {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .jogo {
-            text-align: center; /* Centralizar conteúdo horizontalmente */
-            margin-bottom: 30px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: white;
-        }
-        .jogo img {
-            display: block;
-            margin: 0 auto; /* Centralizar imagem horizontalmente */
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Yvo Lourenzo de Castro</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.php">Início</a></li>
-            <li><a href="portfolio.php">Portfólio</a></li>
-            <li><a href="contato.php">Contato</a></li>
-        </ul>
-    </nav>
+<?php include 'header.php'; ?>
         
     <div class="conteudo">
     <h2>Projetos Desenvolvidos</h2>
     <div class="jogo">
         <h3>Gerenciador de Usuarios</h3>
         <p>Um CRUD (Create, Read, Update, Delete) é um conjunto de operações básicas para gerenciar dados em um banco de dados. Você pode criar, ler, atualizar e excluir registros. É uma parte fundamental do desenvolvimento de sistemas e aplicativos que envolvem armazenamento de dados.</p>
-        <a href="crud.php" target="_blank">Acessar Projeto</a>
+        <a href="Crud/crud.php" target="_blank">Acessar Projeto</a>
     </div>
     <div class="jogo">
         <h3>Minigame - Forca</h3>
@@ -121,62 +61,9 @@
         <b>Tecnologias Utilizadas: React Native</b>
          <a href="https://github.com/yvolourenzo/Instagram_React" target="_blank">Visitar Código do Aplicativo</a>
 </div>
-
 </div>
 
-<footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
-    &copy; <?php echo date("d/m/Y"); ?> - Todos os direitos reservados.
-        </footer>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
-<style>
-
-    /* Adicione essas regras ao seu CSS existente */
-
-.jogo {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.jogo:hover {
-    transform: translateY(-5px);
-}
-
-.jogo h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.jogo p {
-    margin-bottom: 15px;
-}
-
-.jogo b {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.jogo a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.jogo a:hover {
-    background-color: #555;
-}
-h2{
-    text-align: center;
-}
-
-</style>
